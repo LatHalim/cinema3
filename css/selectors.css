@@ -1,0 +1,101 @@
+/** Селектор по типу*/
+h2 {
+    color: cornflowerblue;
+    font-size: 40px;
+}
+
+/** Селектор по классу*/
+.des {
+    color: cyan;
+    font-size: 50px;
+}
+
+.on {
+    font-style: italic;
+}
+
+/** Селектор по id*/
+#one {
+    color: darkorange;
+    font-size: 30px;
+}
+
+#non {
+    color: darkorchid;
+    font-size: 40px;
+    font-style: normal;
+}
+
+/** Селектор потомков*/
+.menu a {
+    font-size: 50px;
+    color: darkseagreen;
+}
+
+/** Сестринский селектор*/
+h3+.des {
+    font-size: 30px;
+    color: deeppink;
+}
+
+/** дочерний селектор*/
+.menu2>li a {
+    font-size: 50px;
+    color: darkseagreen;
+}
+
+/**Обращение к атрибуту */
+a[data-name] {
+    font-size: 60px;
+    color: gold;
+}
+
+/**Обращение к атребуту со значением */
+a[data-name="dd"] {
+    font-size: 60px;
+    color: slateblue;
+}
+
+/**Содержит слово */
+a[data-name~="cc"] {
+    color: springgreen;
+}
+
+/**Содержит сочетание */
+a[data-name*="cc"] {
+    color: rgb(17, 0, 255);
+}
+
+/**Начинается с */
+a[data-name^="cc"] {
+    color: springgreen;
+}
+
+/**Заканчивается на */
+a[data-name$="cc"] {
+    color: rgb(17, 0, 255);
+}
+
+/** Селектор атрибутов*/
+input[type="text"] {
+    width: 150px;
+    display: block;
+    margin-bottom: 10px;
+    background-color: yellow;
+}
+
+input[type="button"] {
+    background-color: cyan;
+}
+
+/** Группирующий селектор*/
+h4,
+h5,
+h6 {
+    color: darkorange;
+}
+
+/**Селектор смежных элементов*/
+h5~.smez {
+    font-style: italic;
+}
