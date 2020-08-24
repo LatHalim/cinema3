@@ -1,3 +1,13 @@
+body {
+    min-width: 16rem;
+    max-width: 96rem;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-text-size-adjust: 100%;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
 /** Селектор по типу*/
 h2 {
     color: cornflowerblue;
@@ -98,4 +108,118 @@ h6 {
 /**Селектор смежных элементов*/
 h5~.smez {
     font-style: italic;
+}
+
+/** Задание по флекс*/
+.flex__header {
+    font-size: 2rem;
+    text-align-last: center;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 40rem;
+    justify-content: center;
+
+}
+
+.flex__element {
+    flex: 0 0 19%;
+    background: rgb(160, 31, 31);
+    padding: 1rem;
+    margin: .5rem;
+    
+    flex-direction: column;
+    justify-items: center;
+}
+
+.one {
+    color: #90d23d;
+    min-height: 33.33%;
+}
+
+.two {
+    color: aqua;
+    min-height: 33.33%;
+}
+
+.three {
+    color: blue;
+    min-height: 33.33%;
+    overflow: hidden;
+}
+
+/** Задание по грид*/
+.grid__header {
+    font-size: 2rem;
+    text-align-last: center;
+    margin-top: 0.5rem;
+}
+
+.grid-test {
+    display: grid;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    justify-content: center;
+    text-align: center;
+    grid-template-areas:
+        'test-1 test-2 test-3'
+        'test-4 test-2 test-6'
+        'test-7 test-8 test-9'
+        'test-10 test-11 test-12';
+    grid-auto-columns: 1fr;
+    font-size: 1.5rem;
+}
+
+
+.test {
+    border: 0.5rem solid chartreuse;
+    align-content: center;
+}
+
+.test-1 {
+    grid-area: test-1;
+}
+
+.test-2 {
+    grid-area: test-2;
+    background: rgba(0, 0, 0, 0.205);
+}
+
+.test-3 {
+    grid-area: test-3;
+}
+
+.test-4 {
+    grid-area: test-4;
+}
+
+.test-6 {
+    grid-area: test-6;
+}
+
+.test-7 {
+    grid-area: test-7;
+}
+
+.test-8 {
+    grid-area: test-8;
+}
+
+.test-9 {
+    grid-area: test-9;
+}
+
+.test-10 {
+    grid-area: test-10;
+}
+
+.test-11 {
+    grid-area: test-11;
+    background: rgba(0, 0, 0, 0.205);
+}
+
+.test-12 {
+    grid-area: test-12;
 }
