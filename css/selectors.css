@@ -8,114 +8,6 @@ body {
     height: 100%;
 }
 
-/** Селектор по типу*/
-h2 {
-    color: cornflowerblue;
-    font-size: 40px;
-}
-
-/** Селектор по классу*/
-.des {
-    color: cyan;
-    font-size: 50px;
-}
-
-.on {
-    font-style: italic;
-}
-
-/** Селектор по id*/
-#one {
-    color: darkorange;
-    font-size: 30px;
-}
-
-#non {
-    color: darkorchid;
-    font-size: 40px;
-    font-style: normal;
-}
-
-/** Селектор потомков*/
-.menu a {
-    font-size: 50px;
-    color: darkseagreen;
-}
-
-/** Сестринский селектор*/
-h3+.des {
-    font-size: 30px;
-    color: deeppink;
-}
-
-/** дочерний селектор*/
-.menu2>li a {
-    font-size: 50px;
-    color: darkseagreen;
-}
-
-/**Обращение к атрибуту */
-a[data-name] {
-    font-size: 60px;
-    color: gold;
-}
-
-/**Обращение к атребуту со значением */
-a[data-name="dd"] {
-    font-size: 60px;
-    color: slateblue;
-}
-
-/**Содержит слово */
-a[data-name~="cc"] {
-    color: springgreen;
-}
-
-/**Содержит сочетание */
-a[data-name*="cc"] {
-    color: rgb(17, 0, 255);
-}
-
-/**Начинается с */
-a[data-name^="cc"] {
-    color: springgreen;
-}
-
-/**Заканчивается на */
-a[data-name$="cc"] {
-    color: rgb(17, 0, 255);
-}
-
-/** Селектор атрибутов*/
-input[type="text"] {
-    width: 150px;
-    display: block;
-    margin-bottom: 10px;
-    background-color: yellow;
-}
-
-input[type="button"] {
-    background-color: cyan;
-}
-
-/** Группирующий селектор*/
-h4,
-h5,
-h6 {
-    color: darkorange;
-}
-
-/**Селектор смежных элементов*/
-h5~.smez {
-    font-style: italic;
-}
-
-/** Задание по флекс*/
-.flex__header {
-    font-size: 2rem;
-    text-align-last: center;
-}
-
 .flex {
     display: flex;
     flex-wrap: wrap;
@@ -161,21 +53,18 @@ h5~.smez {
     display: grid;
     row-gap: 1rem;
     column-gap: 1rem;
-    justify-content: center;
     text-align: center;
     grid-template-areas:
         'test-1 test-2 test-3'
-        'test-4 test-2 test-6'
-        'test-7 test-8 test-9'
-        'test-10 test-11 test-12';
+        'test-4 test-2 test-5'
+        'test-6 test-7 test-8'
+        'test-9 test-10 test-11';
     grid-auto-columns: 1fr;
-    font-size: 1.5rem;
 }
 
 
 .test {
     border: 0.5rem solid chartreuse;
-    align-content: center;
 }
 
 .test-1 {
@@ -185,6 +74,9 @@ h5~.smez {
 .test-2 {
     grid-area: test-2;
     background: rgba(0, 0, 0, 0.205);
+    align-items: center;
+    display:flex;
+    justify-content: center;
 }
 
 .test-3 {
@@ -194,7 +86,9 @@ h5~.smez {
 .test-4 {
     grid-area: test-4;
 }
-
+.test-5 {
+    grid-area: test-5;
+}
 .test-6 {
     grid-area: test-6;
 }
@@ -213,13 +107,9 @@ h5~.smez {
 
 .test-10 {
     grid-area: test-10;
+    background: rgba(0, 0, 0, 0.205);
 }
 
 .test-11 {
     grid-area: test-11;
-    background: rgba(0, 0, 0, 0.205);
-}
-
-.test-12 {
-    grid-area: test-12;
 }
