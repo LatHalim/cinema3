@@ -42,6 +42,5 @@ for (var i = 0; i < keys.length; i++) {
             input.innerHTML += btnVal;
         }
         e.preventDefault();
-
     }
 }
