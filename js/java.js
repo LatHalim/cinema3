@@ -77,5 +77,3 @@ for (i = 0; i < d.length; i++) {
 
 
 
-
-
