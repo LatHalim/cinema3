@@ -6,6 +6,7 @@ function name() {
 }
 document.getElementById('submit').onclick = name;
 
+
 /* Задача №2*/
 function abc(a, b) {
     if (a > b) {

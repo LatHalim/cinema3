@@ -15,19 +15,13 @@ a3 = {
     console.log(resTwo)
 
 /* Задача №3*/
-let form = document.getElementById('form');
-let tree1 = document.getElementById('u7-key_input');
-let tree2 = document.getElementById('u7-value_input');
-let tree3 = document.getElementById('nazmi');
-let treeKey = {'u7-key1': 'u7-value1', 'u7-key2': 'u7-value2', 'buttun': 'b'};
-let key = (Object.keys(treeKey));
-let val = (Object.values(treeKey));
-console.log(key);
-console.log(val);
-console.log(tree1.value);
-console.log(form.elements)
-form.onsubmit = function(event){
-  event.preventDefault();
+let newMassiv = new Map();
+console.log(newMassiv);
+function acoMassiv () {
+  let key = document.getElementById('u7-key_input');
+  let value = document.getElementById('u7-value_input');
+  newMassiv.set(key.value,value.value);
+  console.log(newMassiv);
 }
 
 
