@@ -1,10 +1,10 @@
 /* Задача №1*/
-function name() {
+function name(event) {
     let firstname = document.getElementById('firstname').value;
-    let html = 'Hello' + firstname;
-    document.getElementById('resName').innerHTML = html;
+    document.getElementById('helloName').innerHTML = "Привет" + " " + firstname +"!";
+    event.preventDefault();
 }
-document.getElementById('submit').onclick = name;
+  form.addEventListener('submit', name);
 
 /* Задача №2*/
 function max(a, b) {
